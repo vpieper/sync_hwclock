@@ -8,7 +8,7 @@ if [ ! -f $LOGFILE ]; then
 fi
 
 # Set the maximum allowed difference in seconds between Hw-Clock and Sys-Clock
-maxDiffSec="2"
+maxDiffSec="5"
 
 msgNoConnection="No connection to time-server"
 msgConnection="Connection to time-server"
