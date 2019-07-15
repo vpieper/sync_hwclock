@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# Location of logfile
+# Location of sync logfile
 LOGFILE="/var/log/ntplog.log"
 
 if [ ! -f $LOGFILE ]; then
