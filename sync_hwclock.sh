@@ -18,7 +18,7 @@ if ( ntpq -p | grep -q "^*"  ); then
         echo $msgConnection
         echo "---------------------------------"
 
-        secHwClock=$(sudo hwclock --debug | grep "^Hw clock time" | awk '{print $(NF-3)}')
+        secHwClock=$(sudo hwclock --verbose | grep "^Hw clock time" | awk '{print $(NF-3)}')
         echo "HwClock: $secHwClock sec"
 
         secSysClock=$(date +"%s")
